@@ -23,4 +23,18 @@
 
    因為大的network比較好訓練！由小變大的netwrok的正確率無法跟由大變小的network的正確率相比！
    
+## Compression: Knowledge Distillation
+### Knowledge Distillation
+根據大的network(teacher network)來製造小的network(student network)
+1. Ensemble是什麼？
+   
+   把多個模型的輸出，平均下來當作是最終的答案！
+   
+2. 如果teacher network跟student network差太多的話，可否在中間加另一個network去協助student network的training？ 可以！
+
+### Parameter Quantization:能不能使用比較少的空間來儲存parameter？
+### Architecture Design: 透過netwrok架構的設計來達到減少參數量的效果！
+### Dynamic Computation: 希望network可以自由的調整其運算量！（將同一個network跑在各種device上，但每個device可用的運算資源不一樣多！）
+1. 讓network可以自由的調整期深度
+2. 讓network可以自由決定其寬度
  
